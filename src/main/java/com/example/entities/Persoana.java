@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import java.util.Map;
 
 @Entity
+@Cacheable
 public class Persoana {
 
     @Id

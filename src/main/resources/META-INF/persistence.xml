@@ -2,6 +2,17 @@
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.1">
     <persistence-unit name="java2c5PU" transaction-type="RESOURCE_LOCAL">
 
+
+        <shared-cache-mode>ENABLE_SELECTIVE</shared-cache-mode>
+        <!-- ALL - toate entitatile sunt cache-uite
+            NONE - nicio entitate nu este cache-uita
+            ENABLE-SELECTIVE - implicit nicio entiate nu este cache-uita
+                                si selectam noi entitatile pe crare vrem sa le cache-uim
+                                anotandu-le cu @Cacheable
+            DISABLE-SELECTIVE - implicit toate entitatile sunt cache-uite
+                                si selectam noi entitatile pe care NU vrem sa le cache-uim
+                                anotandu-le cu @Cacheble(false)
+        -->
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
             <class>com.example.entities.Folder</class>
             <class>com.example.entities.Fisier</class>
