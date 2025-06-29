@@ -3,8 +3,12 @@
     <persistence-unit name="java2c5PU" transaction-type="RESOURCE_LOCAL">
 
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.example.entities.Folder</class>
-        <class>com.example.entities.Fisier</class>
+            <class>com.example.entities.Folder</class>
+            <class>com.example.entities.Fisier</class>
+            <class>com.example.entities.Magazin</class>
+
+        <!--        <exclude-unlisted-classes>false</exclude-unlisted-classes>-->
+
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
@@ -13,6 +17,8 @@
 
             <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
+<!--            // am adugat linia urmatoare pentru a citiy entitatile din pachet-->
+<!--            <property name="hibernate.extra_entity_classes" value="com.example.entities"/>-->
         </properties>
     </persistence-unit>
 </persistence>
