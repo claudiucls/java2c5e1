@@ -9,6 +9,7 @@
             <class>com.example.entities.Scoala</class>
             <class>com.example.entities.Persoana</class>
             <class>com.example.entities.Adresa</class>
+            <class>com.example.entities.Organizatie</class>
         <!--        <exclude-unlisted-classes>false</exclude-unlisted-classes>-->
 
         <properties>
