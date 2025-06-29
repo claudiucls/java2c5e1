@@ -6,7 +6,7 @@
             <class>com.example.entities.Folder</class>
             <class>com.example.entities.Fisier</class>
             <class>com.example.entities.Magazin</class>
-
+            <class>com.example.entities.Scoala</class>
         <!--        <exclude-unlisted-classes>false</exclude-unlisted-classes>-->
 
         <properties>

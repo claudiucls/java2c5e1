@@ -12,6 +12,8 @@ public class Magazin {
     private int id;
 
     @ElementCollection
+    // spunem ca Integer - nr de angajati pe departament
+    // String  - numele fiecarui departament
     private Map<Integer, String> departamente;
 
     public int getId() {
